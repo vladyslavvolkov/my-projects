@@ -1,0 +1,149 @@
+projects_workdir: /x
+organization:
+    name: Hiberbee
+projects:
+  - name: my-infrastructure
+    git:
+      provider: github.com
+      owner: vladyslavvolkov
+    license: unlicense
+  - name: my-pc
+    git:
+      provider: github.com
+      owner: vladyslavvolkov
+    license: unlicense
+  - name: my-projects
+    git:
+      provider: github.com
+      owner: vladyslavvolkov
+    license: unlicense
+  - name: spotishake
+    git:
+      provider: github.com
+      owner: vladyslavvolkov
+    license: unlicense
+  - name: honeycomb
+    git:
+      provider: github.com
+      owner: vladyslavvolkov
+    license: unlicense
+  - name: cookies
+    git:
+      provider: github.com
+      owner: vladyslavvolkov
+    license: unlicense
+  - name: vladyslavvolkov
+    git:
+      provider: github.com
+      owner: vladyslavvolkov
+    license: unlicense
+  - name: cucumber-confiture
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: template-java-spring
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: template-java-cucumber
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: template-php-symfony
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: template-typescript-react
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: template-typescript-github-action
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: template-typescript-graphql
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: template-typescript-react-native
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: ansible-collection-devops
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: ansible-collection-templates
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: cucumber-kubernetes
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: github-action-skaffold
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: github-action-helm
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: github-action-minikube
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: github-action-kops
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: github-action-cucumber
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: github-action-taurus
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: jetbrains-plugin-digitalocean
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: jetbrains-ide-theme
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: vscode-theme
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: gradle-plugin-ansible
+    git:
+      provider: github.com
+      owner: hiberbee
+    license: mit
+  - name: github-action-1password
+    git:
+      owner: defendabot
+      provider: github.com
+    license: mit

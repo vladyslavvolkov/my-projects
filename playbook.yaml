@@ -1,0 +1,30 @@
+- hosts: all
+  connection: local
+  tasks:
+    - name: Git templates
+      include_role:
+        name: vladyslavvolkov.templates.git
+      loop: "{{ projects }}"
+      loop_control:
+        loop_var: project
+      vars:
+        repository_url: "git@{{ project.git.provider }}:{{ project.git.owner }}/{{ project.name }}.git"
+        workdir: "{{ projects_workdir }}/{{ project.git.provider }}/{{ project.git.owner }}/{{ project.name }}"
+    - name: License templates
+      include_role:
+        name: vladyslavvolkov.templates.license
+      loop: "{{ projects }}"
+      loop_control:
+        loop_var: project
+      vars:
+        workdir: "{{ projects_workdir }}/{{ project.git.provider }}/{{ project.git.owner }}/{{ project.name }}"
+        template: "{{ project.license }}"
+    - name: Editor Config templates
+      include_role:
+        name: vladyslavvolkov.templates.editorconfig
+      loop: "{{ projects }}"
+      loop_control:
+        loop_var: project
+      vars:
+        workdir: "{{ projects_workdir }}/{{ project.git.provider }}/{{ project.git.owner }}/{{ project.name }}"
+        template: .editorconfig
